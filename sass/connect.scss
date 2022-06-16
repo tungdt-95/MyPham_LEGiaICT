@@ -1,0 +1,140 @@
+.connect
+{
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    border-top: 1px solid #ccc;
+
+}
+.connect_title
+{
+    font-size: 25px;
+    text-transform:uppercase;
+    font-weight: 500;
+}
+.connect_story
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input 
+    {
+        width: 500px;
+        padding: 15px;
+        border-radius: 4px;
+        border: 1px solid #000;
+        color: #000;
+        font-weight: 700;
+    }
+    input:focus
+    {
+        outline: none;
+    }
+    button 
+    {
+        padding: 14px;
+        border-radius: 4px;
+        background-color: #fff;
+        border: 1px solid #000;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    button:hover
+    {
+        background-color: #000;
+        transition: .3s ease-in-out;
+        color: #fff;
+    }
+}
+// ---------------------contact-------------------// 
+.section_contact
+{
+    border-bottom: 1px solid #e5e5e5;
+}
+.contact
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+    .contact_title 
+    {
+        font-size: 25px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .social_network 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        li 
+        {
+            border: 2px solid #333;
+            border-radius: 6px;
+            padding: 6px 8px;
+            &:hover
+            {
+                background-color: #009ee4;
+                transition: .3s linear;
+                border: 2px solid #009ee4;
+            }
+            &:hover i 
+            {
+                color: #fff;
+            }
+        }
+
+        i 
+        {
+            font-size: 25px;
+            color: #000;
+        }
+    }
+}
+@media (max-width:800px) {
+    .connect_story
+    {
+        display: flex;
+        flex-direction: column;
+
+        input 
+        {
+            width: 100%;
+        }
+        button 
+        {
+            margin-top: 10px;
+            width: 100%;
+            display: inline;
+        }
+        form 
+        {
+            text-align: center;
+            width: 100%;
+        }
+    }
+    .connect_title
+    {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .contact
+    {
+        display: flex;
+        flex-direction: column;
+        .contact_title
+        {
+            margin-bottom: 10px;
+        }
+        ul 
+        {
+            margin-top: 10px;
+            gap: 20px;
+        }
+    }
+    
+}

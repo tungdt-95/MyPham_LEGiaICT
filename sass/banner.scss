@@ -1,0 +1,68 @@
+.banner
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .product_search
+    {   
+        position: relative;
+            .viewport-img {
+            position: relative;
+            width: 100%;
+            display: block;
+            padding-top: 100%;
+            overflow: hidden;
+            transition: 0.4s;
+        }
+
+        .viewport-img img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .search_content
+        {
+            background-color: rgba(255,255,255,.8);
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            p 
+            {
+                font-size: 14px;
+                font-weight: 400;
+            }
+            span 
+            {
+                font-size: 12px;
+                color: #777;
+            }
+        }
+
+    }
+}
+.heading_general
+{
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    margin: 30px 0;  
+    color: rgba(255, 166, 0, 0.829);
+}
+
+
+
+@media (max-width:800px) {
+    .banner div 
+    {
+        margin-bottom: 10px;
+    }
+    .heading_general
+    {
+        font-size: 18px;
+    }
+}

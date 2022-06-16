@@ -1,0 +1,46 @@
+footer
+{
+    
+    a:hover
+    {
+        transform: translateX(8px);
+        transition: .3s ease-in-out;
+        color: #009ee4;
+    }
+}
+.img_footer
+{
+    width: 200px;
+    object-fit: cover;
+    display: block;
+}
+.footer_title
+{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+li
+{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+@media (max-width:800px) {
+    footer 
+    {
+        .footer_title
+        {
+            font-size: 12px;
+            font-weight: 700;
+        }
+        li 
+        {
+            font-size: 14px;
+        }
+        .img_footer
+        {
+            width: 100px;
+        }
+    }
+}

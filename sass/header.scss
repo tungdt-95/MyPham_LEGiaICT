@@ -1,0 +1,233 @@
+
+.header_top 
+{
+    padding: 10px;
+    background-color: #6db4d1;
+    color: #fff;
+    ul 
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 5px;
+
+        li 
+        {
+            text-transform: capitalize;
+            span 
+            {
+                text-transform: none;
+            }
+        }
+        i 
+        {
+            padding-left: 10px;
+        }
+    }
+
+}
+.header_bottom
+{
+    padding: 10px;
+    border-bottom: 1px solid rgb(170, 163, 163);
+
+    .header_login
+    {
+        margin-top: 30px;
+    }
+    .header_login ul 
+    {
+        display: flex;
+        gap: 25px;
+    }
+    .header_login li 
+    {
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .btn_mb
+    {
+        background-color: transparent;
+        border: none;
+        display: none;
+        i 
+        {
+            font-size: 20px;
+        }
+    }
+    .header_form
+    {
+        position: relative; 
+        margin-top: 20px;
+    }
+    
+    .header_form input 
+    {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid rgb(127, 117, 117);
+        border-radius: 10px;
+        outline: none;
+        color: #000;
+        font-weight: 300;
+        font-style: italic;
+    }
+    
+    .header_form i 
+    {
+        position: absolute;
+        right: 10px;
+        top: 8px;
+        font-size: 20px;
+        color: rgba(90, 86, 86, 0.805);
+        cursor: pointer;
+    }
+}
+.header_logo img
+{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+// ----------------nav--------------//
+
+nav 
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 10px 0;
+    
+    .menu
+    {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        position: relative;
+
+        i 
+        {
+            padding-left: 3px;
+            cursor: pointer;
+        }
+        li 
+        {
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 13px;
+            color: #303030;
+        }
+        li:hover 
+        {
+            color: #009ee4;
+            transition:.3s ease-in-out;
+        }
+    }
+    .nav_title
+    {
+        font-size: 13.5px;
+        line-height: 18px;
+        color: #000;
+        font-weight: 500;
+    }
+    .menu_child
+    {
+        position: absolute;
+        background-color: #fff;
+        z-index: 10;
+        padding: 20px;
+        top: 25px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu_pro:hover .menu_child
+    {
+        transition: .3s ease-in-out;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (max-width:800px) {
+   
+    .header_bottom .header_login ul 
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .header_top 
+    {
+        ul 
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        li 
+        {
+            margin-bottom: -15px;
+        }
+    }
+    nav 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+        .menu_child
+        {
+            background-color:#fff;
+            min-width: 200px;
+            position: unset;
+            transition: unset;
+            opacity: unset;
+            visibility: unset; 
+            display: block;       
+        }
+        .menu_pro:hover .menu_child
+        {
+            visibility: unset;
+            transition: unset;
+            opacity: unset;
+        }
+        .menu
+        {
+            gap: 10px;
+        }
+        .nav_title
+        {
+            font-size: 11px;
+            text-align: center;
+        } 
+    }
+   
+    .header_login .btn_mb
+    {
+        display: block;
+        margin-left: -25px;
+
+         i 
+         {
+             font-size: 20px;
+         }
+    }
+    .header_top
+    {
+        display: none;
+    }
+    .hide_mb
+    {
+        background-color: #fef5f7;
+        display: none;
+        ul 
+        {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .menu_child
+    {
+        left: 30%;
+    }
+    
+    
+}
